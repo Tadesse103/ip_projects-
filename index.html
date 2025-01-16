@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>college of  Bussiness and Economics</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  details {
+      font-family: Arial, sans-serif;
+      margin: 20px 0;
+      width: 300px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #007BFF;
+    }
+    summary:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <details>
+    <summary>Read More</summary>
+    <p>
+      This is the additional content revealed when you click "Read More." You can include any HTML content here, such as text, images, or links.
+    </p>
+  </details>
+</body>
+</html>
+Option 2: Custom Solution with CSS
+This example uses CSS and :target to toggle the "Read More" functionality.
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read More Example</title>
+  <style>
+    .content {
+      font-family: Arial, sans-serif;
+      max-width: 300px;
+      margin: 20px 0;
+    }
+    .extra-content {
+      display: none;
+    }
+    .read-more:target + .extra-content {
+      display: block;
+    }
+    .read-more {
+      color: #007BFF;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="Headers">
+    <div class="logo">
+      <a href="https://www.inu.edu.et/photo-gallery/"><img src="./images/logo.png" alt="universty logo"></a>
+    </div>
+    <nav class="main_header">
+      <ul>
+        <li><a href="./login/login.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li>
+          <div class="down">
+              <a href="#">Department <i class="fas fa-caret-down"></i></a>
+                <div class="list">
+                  <a href="./subabout/account.html">Accounting </a>
+                  <a href="./subabout/managment.html">Management </a>
+                  <a href="./subabout/markrting.html">marketing </a>
+                  <a href="./subabout/public.html">public Administration </a>
+                  <a href="./subabout/turism.html">trusim and hotel Management </a>
+                  
+                </div>
+            </div>
+          
+        </li>
+        <div class="program">
+          <a href="./login/login.html">Programs</a>
+          <div class="list_1">
+            <a href="#">PHD program</a>
+            <a href="#">MSc program</a><a href="#">BSc program</a>
+          </div>
+        </div>
+      </li>
+        <li><a href="./login/login.html">contact us</a></li>
+        <li><a href="./loginform.html" target="_self">login</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="animated_background">
+    <!-- <marquee behavior="scroll" loop="30" scrollamount="20" direction=""> <img src="./images/background_image.jpg" alt="block"></marquee> -->
+  </div>
+  <section>
+    <div class="body">
+      <p class="head_forbody">Well come TO College of Social Science and Humanty</p>
+        <img src="./images/dean_image.jpg" title="Ylkal Andualem Demeke" alt="dean logo" >
+      <div> 
+        <a href="#">Ylkal Andualem (PHD)</a> <br>
+      <b>Dean</b>
+      <p>TEL: <a href="#">251-918-37-53-33</a></p>
+      <span>Email <a href="#">Ylkal2029@gmail.com</a></span>
+      </div>
+          College of Business and Economics is among the founded colleges of Injibara University opened in 2017. It started teaching with 411 regular undergraduate students and 18 academic staff under 5 departments in December 2018.  The college has total of 7 departments since 2021. It has also extension undergraduate program in Accounting and Finance, Economics, and Management.
+          Moreover, the college has started two post graduate programs namely MSc in Accounting and Finance, and Master of Business Administration. Currently, more than 1900 undergraduate and 124 post graduate students are enrolled. There are 63 academic staff of which one is Associate Professor and five are Assistant Professors.
+          In addition to teaching and learning, the college has also been highly engaged in research and community services. Staffs of the college are active in developing research proposals, conducting researches, preparing modules, organizing seminars and providing community services. <br> <br>
+<div class="button_link" title="College of Social Sicence and Humanity"><a href="#"  > <button>Read More </button></a></div>
+    </div>
+  </section>
+  <hr class="hr"> <br>
+  <p class="pure"> List of Department</p>
+  <div class="department_list">
+    <li> <a href="#"><img src="./basic/economics logo.jpg"></a></li>
+    <li><a href="#"><img src="./basic/marketing logo.jpg"></a></li>
+    <li><a href="#"><img src="./basic/public logo.jpg"></a></li>
+    <li><a href="#"><img src="./basic/trusim logo.jpg" ></a></li>
+    <li><a href="#"><img src="./basic/accounting"></a></li>
+  </div>
+</body>
+</html>alt=""

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Science College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #00539c;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        nav {
+            background: #003f7f;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li ul {
+            position: absolute;
+            background: white;
+            color: black;
+            display: none;
+            padding: 0;
+            border: 1px solid #ddd;
+            z-index: 1000;
+        }
+        nav ul li ul li {
+            display: block;
+            padding: 0.5rem 1rem;
+        }
+        nav ul li ul li:hover {
+            background: #ddd;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li a {
+            text-decoration: none;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        footer {
+            background: #00539c;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Social Science College</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li>
+            <a href="#">Departments</a>
+            <ul>
+                <li><a href="#sociology">Sociology</a></li>
+                <li><a href="#anthropology">Anthropology</a></li>
+                <li><a href="#psychology">Psychology</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Programs</a>
+            <ul>
+                <li><a href="#undergrad">Undergraduate</a></li>
+                <li><a href="#grad">Graduate</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+        </li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#signup">Sign Up</a></li>
+    </ul>
+</nav>
+
+<div class="container" id="home">
+    <h2>Home</h2>
+    <p>Welcome to the Social Science College, where we explore the depths of human behavior, society, and culture.</p>
+</div>
+
+<div class="container" id="about">
+    <h2>About</h2>
+    <p>Our college offers a vibrant community dedicated to academic excellence, research, and innovation in the field of social sciences.</p>
+</div>
+
+<div class="container" id="sociology">
+    <h2>Sociology Department</h2>
+    <p>The Sociology Department focuses on understanding human behavior and societal dynamics.</p>
+</div>
+<div class="container" id="anthropology">
+    <h2>Anthropology Department</h2>
+    <p>The Anthropology Department explores cultures, archaeology, and ethnography.</p>
+</div>
+<div class="container" id="psychology">
+    <h2>Psychology Department</h2>
+    <p>The Psychology Department delves into the complexities of the human mind and behavior.</p>
+</div>
+
+<div class="container" id="undergrad">
+    <h2>Undergraduate Programs</h2>
+    <p>Our undergraduate programs offer foundational knowledge in sociology, anthropology, and psychology.</p>
+</div>
+<div class="container" id="grad">
+    <h2>Graduate Programs</h2>
+    <p>Our graduate programs focus on research and advanced studies in various fields of social sciences.</p>
+</div>
+<div class="container" id="certificates">
+    <h2>Certificate Programs</h2>
+    <p>Short-term programs designed to enhance skills in specific areas of social sciences.</p>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries, email us at socialscience@[collegeemail].edu or call (123) 456-7890.</p>
+</div>
+
+<div class="container" id="login">
+    <h2>Login</h2>
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div class="container" id="signup">
+    <h2>Sign Up</h2>
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; [Year] Social Science College. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

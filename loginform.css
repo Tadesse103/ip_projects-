@@ -10,8 +10,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  width: 400px;
+  height: 450px;
   background-size: cover;
   background-position: center;
   animation: animateBg 5s linear infinite;
@@ -125,14 +125,31 @@ button {
 .register-link p a:hover {
   text-decoration: underline;
 }
-@media (max-width: 360px) {
-  .login-box {
-    width: 100%;
-    height: 100vh;
+@media(max-width:700px) {
+  section{
+    width: 200px;
+    height: 200px;
     border: none;
     border-radius: 0;
   }
   .input-box {
     width: 290px;
+  }
+  .login-box{
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+  }
+  .login-box form{
+    width: 200px;
+    height: 200px;
+  }
+  button{
+    background-color: blue;
+    color: white;
+    width: 100px;
+  }
+  .input-box{
+    width: 200px;
   }
 }
