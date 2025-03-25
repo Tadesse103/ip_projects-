@@ -12,7 +12,7 @@ body{
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
+  background-color: rgb(248, 12, 213);
 }
 .profile-card{
   display: flex;
@@ -20,7 +20,7 @@ body{
   flex-direction: column;
   max-width: 370px;
   width: 100%;
-  background: white;
+  background: rgb(18, 241, 215);
   border-radius: 24px;
   padding: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -36,27 +36,34 @@ body{
   margin-bottom: 10px;
 }
 .image .profile-image{
-  height: 100%;
+  height: 95%;
   width: 100%;
-  border-radius: 50%;
-  padding: 3px;
+  border-radius: 48%;
+  padding: 6px;
   background-color: blue;
-  border: 2px solid blue;
+  border: 8px solid rgb(244, 32, 244);
   object-fit:cover;
 }
 .profile-card .text-data{
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: #e005e8;
+  color: #e805d1;
 }
 .text-data .name{
-font-size: 22px;
-font-weight: 500;
+font-size: 30px;
+font-weight: 700;
+color: green;
 }
 .text-data .job{
-font-size: 14px;
-font-weight: 400;
+font-size: 30px;
+font-weight: 700;
+color: #ffee00;
+}
+.text-data .developer{
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(0, 100%, 50%);
 }
 .profile-card .media-bottons{
   display: flex;
@@ -67,14 +74,17 @@ font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
-color: #fff;
-width: 34px;
-height: 34px;
-border-radius: 50%;
-margin: 0 8px;
-background-color: #0a1111;
-text-decoration: none;
-font-size: 18px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #0a1111;
+  text-decoration: none;
+  font-size: 18px;
+}
+.media-bottons .link:hover{
+  transform: scale(.7);
 }
 .profile-card .buttons{
 display: flex;
@@ -82,19 +92,20 @@ align-items: center;
 margin-top: 25px;
 }
 .buttons .button{
-  color: #fff;
-  font-size: 14px;
+  color: white;
+  font-size: 20px;
   font-weight: 400;
   border: none;
-  margin: 0 10px;
+  margin: 0 20px;
   padding: 8px 24px;
   border-radius: 24px;
   cursor: pointer;
-  background-color: rgb(0, 68, 255);
-  transition: all 0.3 ease;
+  background-color: rgb(238, 0, 255);
+  transition: all 0.8 ease;
 }
 .buttons .button:hover{
   background-color: rgb(60, 0, 255);
+transform: scale(.9);
 }
 .profile-card .analaytics{
   display: flex;
